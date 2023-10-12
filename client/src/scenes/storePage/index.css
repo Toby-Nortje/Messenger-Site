@@ -1,0 +1,30 @@
+.breadcrumb {
+  background: lightgrey;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.bread {
+  text-decoration: none;
+  margin: 5px 0 5px 5px;
+}
+
+.bread:hover {
+  text-decoration: underline;
+}
+
+.bread::after {
+  content: "";
+  display: inline-block;
+  margin: 5px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  padding: 3px;
+  position: relative;
+  top: 4px;
+}
+
+.bread-nosauce {
+  margin: 5px;
+}

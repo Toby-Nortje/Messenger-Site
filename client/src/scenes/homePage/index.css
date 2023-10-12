@@ -1,0 +1,206 @@
+/* https://coolors.co/ebd4cb-da9f93-b6465f-890620-2c0703 */
+/* https://grid.layoutit.com/ */
+/* https://github.com/pjchender/react-router-breadcrumb/tree/master */
+body {
+  font-family: serif;
+}
+
+.react-link {
+  color: rgba(0, 0, 0, 65%);
+  text-decoration: none;
+}
+.react-link:hover {
+  color: rgba(0, 0, 0, 80%);
+}
+
+.head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 20vh;
+  background: url("https://images.prismic.io/lovecrafts%2Fc99d14e2-14ad-4a06-85f3-afa05a25e707_copy+of+s_s_4ply_summer_2_-_adrafilcheope%2852.60.42%29_dmcnatura%28n52.25.49.33.23.27.64.88.48%29_millamianatsoftmerino%28143%29_rowanwoolcott4ply%28490%29_langcashmerelace%2865.16.14%29.jpg?auto=compress,format&rect=0,85,1308,543&w=1928&h=800");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dark_layer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 20%);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.head_text {
+  margin: 0;
+  z-index: 2;
+}
+
+#section1 {
+  background-image: url("https://st.depositphotos.com/1011514/2330/i/450/depositphotos_23301584-stock-photo-knitting-yarn-balls.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+}
+
+.s1_blur {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+
+  backdrop-filter: blur(4px);
+
+  padding: 2% 3%;
+}
+
+.s1 {
+  display: flex;
+  flex-direction: column;
+  color: #2c0703;
+  width: 100%;
+}
+
+.s1_text {
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.s1_text p {
+}
+
+.text-container {
+  padding: 5px;
+}
+
+.size-link a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.size-link:hover a {
+  color: #890620;
+}
+
+.btn-container {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.shop-btn {
+  color: #ebd4cb;
+  background: #890620;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+.shop-btn:hover {
+  background: #c4082e;
+}
+.shop-btn:active {
+  transform: scale(1.05);
+}
+
+.s1_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.s1_image > .slider {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+}
+
+.carousel-img {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+#section2 {
+  background: #ebd4cb;
+  box-shadow: inset 10px 10px 26px -10px rgba(255, 255, 255, 1);
+  padding: 1% 5%;
+}
+
+.s2-block {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "one-one one-two";
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1% 5%;
+}
+
+.desc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 100px;
+  border-radius: 35%;
+  border: 5px #890620 solid;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.desc-text {
+  font-weight: bold;
+  margin: 2%;
+  border: 3px #890620 solid;
+  background: #da9f93;
+  border-radius: 15px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.s2-text {
+}
+
+#section3 {
+  height: 200px;
+  background: #da9f93;
+}
+
+footer {
+  background: #b6465f;
+  color: #ebd4cb;
+  padding: 1% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-link {
+  cursor: pointer;
+  color: #890620;
+}
+
+/* TODO: Make Section 2, 3 separate grids with an <hr/> between ( It'll lokk pretty :D ) */

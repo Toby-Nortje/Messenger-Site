@@ -1,0 +1,92 @@
+.store-stock {
+  display: flex;
+  flex-direction: row;
+}
+
+.store-sidebar {
+  flex-basis: 30%;
+  padding: 2%;
+}
+
+.store-mainsection {
+  flex-basis: 70%;
+}
+
+.sb-item {
+  padding: 1rem 0;
+}
+
+.sb-price-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.price-filter {
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.price-input {
+  position: relative;
+}
+
+.price-input::before {
+  position: absolute;
+  content: "R";
+  top: 3px;
+  left: 5px;
+  color: rgb(118, 118, 118);
+}
+
+.price-input > input {
+  text-indent: 15px;
+}
+
+.store-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.store-view {
+  display: flex;
+  gap: 5%;
+}
+.store-view-icon {
+  cursor: pointer;
+  color: gray;
+  transition: color 0.5s;
+  -moz-transition: color 0.5s; /* Firefox 4 */
+  -webkit-transition: color 0.5s; /* Safari and Chrome */
+  -o-transition: color 0.5s; /* Opera */
+}
+
+.store-view-icon:hover {
+  color: black;
+}
+
+.store-body {
+  padding: 3%;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1fr);
+  gap: 2% 2%;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.page-nav {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
